@@ -1,0 +1,9 @@
+pandas
+numpy
+nltk
+nlpaug
+sklearn
+torch
+transformers
+lime
+genism
