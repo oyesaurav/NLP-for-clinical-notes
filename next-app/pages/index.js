@@ -85,6 +85,7 @@ export default function Home() {
         method: "POST",
         body: JSON.stringify(data),
       })
+      console.log(response)
       const result = await response.json()
       setRows(
         result[0].slice(0, 5).map((element) => (
@@ -96,7 +97,7 @@ export default function Home() {
       )
     }
     catch (error) {
-      Alert({ title: "Error", message: "Model hasn't loaded, please try again", color: "red" })
+      console.log(error)
     }
   }
 
